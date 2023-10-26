@@ -45,7 +45,11 @@ const Wrapper = styled.div`
     margin: 0;
     top: 0;
     right: -10rem;
-    transform-origin: top;
+    z-index: 2;
+
+    @media screen and (max-width: 1640px) {
+      transform: scale(1.2) translateX(280px) translateY(-30px);
+    }
 
     @media screen and (max-width: 1440px) {
       transform: scale(1) translateX(280px) translateY(20px);
@@ -53,7 +57,7 @@ const Wrapper = styled.div`
 
 
     @media screen and (max-width: 1024px) {
-      transform: scale(0.8) translateX(180px) translateY(50px);
+      transform: scale(0.8) translateX(180px) translateY(80px);
     }
 
     @media screen and (max-width: 800px) {
