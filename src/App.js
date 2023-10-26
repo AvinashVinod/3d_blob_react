@@ -41,7 +41,6 @@ const Wrapper = styled.div`
 
   .spline {
     position: absolute;
-    width: 100%;
     margin: 0;
     top: 0;
     right: -10rem;
