@@ -47,7 +47,7 @@ const Wrapper = styled.div`
     z-index: 2;
 
     @media screen and (max-width: 1640px) {
-      transform: scale(1.2) translateX(280px) translateY(-30px);
+      transform: scale(1.2) translateX(-20px) translateY(-30px);
     }
 
     @media screen and (max-width: 1440px) {
