@@ -63,7 +63,6 @@ const Wrapper = styled.div`
 
     @media screen and (max-width: 1240px) {
       transform: scale(1) translateX(80px) translateY(20px);
-      z-index: 0;
     }
 
 
@@ -77,35 +76,29 @@ const Wrapper = styled.div`
 
     @media screen and (max-width: 900px) {
       transform: scale(0.8) translateX(-200px) translateY(6rem);
-      z-index: 0;    
     }
 
     @media screen and (max-width: 800px) {
       transform: scale(0.8) translateX(-400px) translateY(6rem);
-      z-index: 0;    
     }
 
     @media screen and (max-width: 700px) {
       transform: scale(0.7) translateX(-400px) translateY(6rem);
-      z-index: 0;
     }
 
     @media screen and (max-width: 600px) {
       transform: scale(0.7) translateX(50px) translateY(8rem);
       left: 50%;
       margin-left: -500px;
-      z-index: 0;
     }
 
 
     @media screen and (max-width: 500px) {
       transform: scale(0.5) translateX(200px) translateY(-8rem);
-      z-index: 0;
     }
 
     @media screen and (max-width: 400px) {
       transform: scale(0.5) translateX(400px) translateY(-8rem);
-      z-index: 0;
     }
   }
 
@@ -135,6 +128,7 @@ const Content = styled.div `
     margin: 0;
     max-width: 500px;
     position: relative;
+    z-index: 2;
 
     @media screen and (max-width: 1024px) {
       font-size: 60px;
@@ -160,7 +154,7 @@ const Content = styled.div `
 
     @media screen and (max-width: 500px) {
       font-size: 13px;
-      max-width: 100px;
+      max-width: 200px;
       top: -2rem;
       left: -4.5rem;
     }
@@ -172,6 +166,7 @@ const Content = styled.div `
     line-height: 150%;
     max-width: 380px;
     position: relative;
+    z-index: 2;
 
     @media screen and (max-width: 600px) {
       font-size: 10px;
@@ -184,6 +179,7 @@ const Content = styled.div `
       max-width: 150px;
       top: -2rem;
       left: -4.5rem;
+      z-index: 2;
     }
   }
 
@@ -208,6 +204,7 @@ const Content = styled.div `
     align-items: center;
 
     position: relative;
+    z-index: 2;
 
     @media screen and (max-width: 500px) {
       width: 200px;
@@ -245,6 +242,8 @@ const Menu = styled.ul`
 
     button {
       width: 200px;
+      position: relative;
+      z-index: 2;
 
       @media screen and (max-width: 600px) {
         margin-left: 40px;
